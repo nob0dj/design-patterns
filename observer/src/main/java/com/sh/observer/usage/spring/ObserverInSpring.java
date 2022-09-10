@@ -12,6 +12,7 @@ public class ObserverInSpring {
         SpringApplication app = new SpringApplication(ObserverInSpring.class);
         app.setWebApplicationType(WebApplicationType.NONE);
         app.run(args);
+        System.out.println("ObserverIntSpring#main : " + Thread.currentThread().getName()); // main
     }
 
 }
