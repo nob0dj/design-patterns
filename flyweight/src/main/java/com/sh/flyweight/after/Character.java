@@ -1,6 +1,5 @@
 package com.sh.flyweight.after;
 
-import java.awt.*;
 
 public class Character {
 
