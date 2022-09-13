@@ -1,4 +1,4 @@
-package com.sh.singleton.enum_;
+package com.sh.singleton._enum;
 
 public class EnumSingletonRun {
 
