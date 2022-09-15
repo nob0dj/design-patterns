@@ -1,4 +1,4 @@
-package com.sh.adapter.after1;
+package com.sh.adapter.after1.account;
 
 public class Account {
 
