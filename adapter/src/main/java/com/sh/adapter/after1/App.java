@@ -1,6 +1,6 @@
 package com.sh.adapter.after1;
 
-import com.sh.adapter.after1.adapter.AccountUserDetails;
+import com.sh.adapter.after1.account.AccountService;
 import com.sh.adapter.after1.adapter.AccountUserDetailsService;
 import com.sh.adapter.after1.security.SecurityController;
 import com.sh.adapter.after1.security.UserDetailsService;
