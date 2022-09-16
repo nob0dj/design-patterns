@@ -1,6 +1,6 @@
 package com.sh.bridge.after;
 
-public interface Champion extends Skin {
+public interface Champion {
 
     void move();
 

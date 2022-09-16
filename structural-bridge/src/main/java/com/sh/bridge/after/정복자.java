@@ -1,8 +1,8 @@
 package com.sh.bridge.after;
 
-public class PoolParty implements Skin{
+public class 정복자 implements Skin{
     @Override
     public String getName() {
-        return "PoolParty";
+        return "정복자";
     }
 }
