@@ -1,7 +1,4 @@
-package com.sh.decorator.before;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.sh.decorator.after;
 
 public class Client {
 
@@ -14,29 +11,26 @@ public class Client {
     public void writeComment(String comment) {
         commentService.addComment(comment);
     }
-    public void printComments() {
-        commentService.printComments();
-    }
+
 
     /**
      * 클래스폭발 이슈
      */
     public static void main(String[] args) {
-        boolean enableSpamFiltering = false;
-        boolean enableTrimming = false;
-        Client client = new Client(new CommentService());
+        boolean enableSpamFiltering = true;
+        boolean enableTrimming = true;
+        CommentService commentService = new DefaultCommentService();
         if(enableSpamFiltering)
-            client = new Client(new SpamFilteringCommentService());
+            commentService = new SpamFilteringCommentService(commentService);
         if(enableTrimming)
-            client = new Client(new TrimmingCommentService());
-        if(enableSpamFiltering && enableTrimming)
-            client = new Client(new SpamFilteringAndTrimmingCommentService());
+            commentService = new TrimmingCommentService(commentService);
+
+        Client client = new Client(commentService);
 
         client.writeComment("오징어게임");
         client.writeComment("보는게 하는거 보다 재밌을 수가 없지...");
         client.writeComment("http://whiteship.me");
 
-        client.printComments();
     }
 
     /*

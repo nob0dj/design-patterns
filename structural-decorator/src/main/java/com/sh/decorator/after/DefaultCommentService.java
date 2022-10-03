@@ -1,9 +1,9 @@
-package com.sh.decorator.before;
+package com.sh.decorator.after;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class CommentService {
+public class DefaultCommentService implements CommentService{
 
     private List<String> comments = new ArrayList<>();
     public void addComment(String comment) {
