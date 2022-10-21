@@ -7,6 +7,7 @@ public class AccountService {
 
     /**
      * 테스트용 임의의 코드
+     *
      * @param username
      * @return
      */
