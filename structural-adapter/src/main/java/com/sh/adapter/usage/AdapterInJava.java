@@ -15,10 +15,10 @@ public class AdapterInJava {
         ArrayList<String> list = Collections.list(enumeration);
 
         // io
-        try(InputStream is = new FileInputStream("input.txt"); // String -> InputStream
-            InputStreamReader isr = new InputStreamReader(is); // InputStream -> InputStreamReader
-            BufferedReader reader = new BufferedReader(isr)) { // InputStreamReader -> BufferedReader
-            while(reader.ready()) {
+        try (InputStream is = new FileInputStream("input.txt"); // String -> InputStream
+             InputStreamReader isr = new InputStreamReader(is); // InputStream -> InputStreamReader
+             BufferedReader reader = new BufferedReader(isr)) { // InputStreamReader -> BufferedReader
+            while (reader.ready()) {
                 System.out.println(reader.readLine());
             }
         } catch (IOException e) {
