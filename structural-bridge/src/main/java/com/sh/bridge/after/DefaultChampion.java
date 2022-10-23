@@ -1,6 +1,6 @@
 package com.sh.bridge.after;
 
-public class DefaultChampion implements Champion{
+public class DefaultChampion implements Champion {
     private Skin skin;
     private String name;
 
