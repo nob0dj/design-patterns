@@ -24,12 +24,12 @@ public class Client {
 
     /**
      * 아이템의 가격을 출력
+     *
      * @param component
      */
     private void printPrice(Component component) {
         System.out.println(component.getPrice());
     }
-
 
 
 }
