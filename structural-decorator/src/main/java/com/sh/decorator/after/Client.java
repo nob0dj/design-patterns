@@ -20,9 +20,9 @@ public class Client {
         boolean enableSpamFiltering = true;
         boolean enableTrimming = true;
         CommentService commentService = new DefaultCommentService();
-        if(enableSpamFiltering)
+        if (enableSpamFiltering)
             commentService = new SpamFilteringCommentService(commentService);
-        if(enableTrimming)
+        if (enableTrimming)
             commentService = new TrimmingCommentService(commentService);
 
         Client client = new Client(commentService);
