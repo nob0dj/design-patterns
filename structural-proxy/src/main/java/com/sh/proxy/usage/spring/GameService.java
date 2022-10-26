@@ -1,10 +1,13 @@
-package com.sh.proxy.after2;
+package com.sh.proxy.usage.spring;
 
-public class DefaultGameService implements GameService {
+import org.springframework.stereotype.Service;
 
-    @Override
+@Service
+public class GameService {
+
     public int startGame() {
         System.out.println("이 자리에 오신 여러분을 진심으로 환영합니다.");
         return 1;
     }
+
 }
