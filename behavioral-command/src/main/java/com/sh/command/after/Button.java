@@ -11,16 +11,16 @@ public class Button {
 
     private Stack<Command> commandStack = new Stack<>();
 
-    public void press(Command command){
+    public void press(Command command) {
         commandStack.push(command);
         command.execute();
     }
 
-    public void undo(){
-       if(!commandStack.isEmpty()){
-           Command lastCommand = commandStack.pop();
-           lastCommand.undo();
-       }
+    public void undo() {
+        if (!commandStack.isEmpty()) {
+            Command lastCommand = commandStack.pop();
+            lastCommand.undo();
+        }
     }
 
     public static void main(String[] args) {
