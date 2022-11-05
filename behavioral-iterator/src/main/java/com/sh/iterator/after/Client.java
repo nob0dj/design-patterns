@@ -1,4 +1,4 @@
-package com.sh.iterator.before;
+package com.sh.iterator.after;
 
 import java.util.Collections;
 import java.util.Iterator;
