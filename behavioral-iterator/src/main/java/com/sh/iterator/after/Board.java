@@ -28,4 +28,8 @@ public class Board {
     public Iterator<Post> getDefaultIterator() {
         return posts.iterator();
     }
+
+    public Iterator<Post> getRecentPostIterator() {
+        return new RecentPostIterator(this.posts);
+    }
 }
