@@ -9,7 +9,7 @@ public class FrontDesk {
 
     /**
      * cleaningService.getTowels 호출시 의존성이 없도록 Room객체가 아닌 id값을 넘긴다.
-     * @param roomId
+     * @param guest
      * @param numOfTowels
      */
     public void getTowels(Guest guest, int numOfTowels) {
