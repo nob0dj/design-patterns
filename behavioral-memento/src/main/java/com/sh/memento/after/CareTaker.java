@@ -1,7 +1,7 @@
 package com.sh.memento.after;
 
+import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import java.util.Stack;
 
@@ -9,7 +9,7 @@ import java.util.Stack;
  * Memento클래스 GameSaver를 관리하는 클래스
  *
  */
-public class CareTaker<T> {
+public class CareTaker<T> implements Serializable {
     Stack<T> mementos = new Stack<>();
 
     public void push(T t){
