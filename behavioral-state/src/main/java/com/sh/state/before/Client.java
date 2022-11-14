@@ -7,26 +7,6 @@ public class Client {
 //        client.testStatusDraft();
 //        client.testStatusPrivate();
         client.testStatusPublished();
-
-
-
-        if(true) return;
-        Student student = new Student("whiteship");
-        OnlineCourse onlineCourse = new OnlineCourse();
-
-        Student keesun = new Student("keesun");
-        keesun.addPrivateCourse(onlineCourse); // keesun을 해당 코스에 등록할 수 있도록 허가함(허가만)
-
-        onlineCourse.addStudent(student);
-        onlineCourse.changeState(OnlineCourse.State.PRIVATE);
-
-        onlineCourse.addStudent(keesun); // keesun을 해당 코스에 등록
-
-        onlineCourse.addReview("hello", student);
-
-        System.out.println(onlineCourse.getState());
-        System.out.println(onlineCourse.getStudents());
-        System.out.println(onlineCourse.getReviews());
     }
 
     /**
