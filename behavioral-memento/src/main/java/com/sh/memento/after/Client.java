@@ -8,14 +8,23 @@ public class Client {
         game.setRedTeamScore(100);
         game.setBlueTeamScore(90);
 
-        GameSaver saver = game.save();
+        game.save();
 
         game.setRedTeamScore(200);
         game.setBlueTeamScore(150);
 
-        game.restore(saver);
+        game.save();
+        game.printSaves();
+
+        game.setRedTeamScore(300);
+        game.setBlueTeamScore(200);
+
+        game.restore();
 
         System.out.println("red : " + game.getRedTeamScore());
         System.out.println("blue : " + game.getBlueTeamScore());
+
+
+        game.printSaves();
     }
 }

@@ -21,4 +21,12 @@ public final class GameSaver {
     public int getBlueTeamScore() {
         return blueTeamScore;
     }
+
+    @Override
+    public String toString() {
+        return "GameSaver{" +
+                "redTeamScore=" + redTeamScore +
+                ", blueTeamScore=" + blueTeamScore +
+                '}';
+    }
 }

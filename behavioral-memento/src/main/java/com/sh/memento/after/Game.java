@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 public class Game implements Serializable {
 
+    CareTaker<GameSaver> careTaker = new CareTaker<>();
     private int redTeamScore;
 
     private int blueTeamScore;
@@ -24,13 +25,19 @@ public class Game implements Serializable {
         this.blueTeamScore = blueTeamScore;
     }
 
-    public GameSaver save(){
-        return new GameSaver(redTeamScore, blueTeamScore);
+    public void save(){
+        this.careTaker.push(new GameSaver(redTeamScore, blueTeamScore));
     }
 
-    public void restore(GameSaver gameSaver){
-        this.redTeamScore = gameSaver.getRedTeamScore();
-        this.blueTeamScore = gameSaver.getBlueTeamScore();
+    public void restore(){
+        GameSaver gameSaver = this.careTaker.pop();
+        if(gameSaver != null) {
+            this.redTeamScore = gameSaver.getRedTeamScore();
+            this.blueTeamScore = gameSaver.getBlueTeamScore();
+        }
     }
 
+    public void printSaves() {
+        this.careTaker.printMementos();
+    }
 }
