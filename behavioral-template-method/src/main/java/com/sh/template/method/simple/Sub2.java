@@ -1,4 +1,4 @@
-package com.sh.template.method;
+package com.sh.template.method.simple;
 
 public class Sub2 extends Super {
 
