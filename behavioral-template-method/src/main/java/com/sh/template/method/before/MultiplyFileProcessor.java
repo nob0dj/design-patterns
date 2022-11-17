@@ -4,16 +4,16 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class MultuplyFileProcessor {
+public class MultiplyFileProcessor {
 
     private String path;
-    public MultuplyFileProcessor(String path) {
+    public MultiplyFileProcessor(String path) {
         this.path = path;
     }
 
     public int process() {
         try(BufferedReader reader = new BufferedReader(new FileReader(path))) {
-            int result = 0;
+            int result = 1;
             String line = null;
             while((line = reader.readLine()) != null) {
                 result *= Integer.parseInt(line);

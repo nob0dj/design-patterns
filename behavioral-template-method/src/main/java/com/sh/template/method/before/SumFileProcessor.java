@@ -4,10 +4,10 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class FileProcessor {
+public class SumFileProcessor {
 
     private String path;
-    public FileProcessor(String path) {
+    public SumFileProcessor(String path) {
         this.path = path;
     }
 
