@@ -1,10 +1,10 @@
 package com.sh.template.callback;
 
+import org.apache.log4j.Logger;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-
-import org.apache.log4j.Logger;
 
 public class Calculator {
 	Logger logger = Logger.getLogger(getClass());

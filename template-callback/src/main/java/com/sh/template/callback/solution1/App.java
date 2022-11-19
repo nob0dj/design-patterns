@@ -1,4 +1,4 @@
-package com.sh.template.callback;
+package com.sh.template.callback.solution1;
 
 import java.io.IOException;
 
