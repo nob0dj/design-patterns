@@ -1,4 +1,4 @@
-package com.sh.template.callback.solution2;
+package com.sh.template.callback.calculator.solution2;
 
 
 public interface ICalcCallback {
