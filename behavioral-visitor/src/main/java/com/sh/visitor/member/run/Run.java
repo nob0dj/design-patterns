@@ -1,9 +1,9 @@
-package com.sh.member.run;
+package com.sh.visitor.member.run;
 
-import com.sh.member.controller.MemberManager;
-import com.sh.member.model.vo.Gold;
-import com.sh.member.model.vo.Silver;
-import com.sh.member.model.vo.Vip;
+import com.sh.visitor.member.controller.MemberManager;
+import com.sh.visitor.member.model.vo.Gold;
+import com.sh.visitor.member.model.vo.Silver;
+import com.sh.visitor.member.model.vo.Vip;
 
 public class Run {
 	public static void main(String[] args){

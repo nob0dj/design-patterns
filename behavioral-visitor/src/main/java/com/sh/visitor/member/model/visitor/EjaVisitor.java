@@ -1,9 +1,9 @@
-package com.sh.member.model.visitor;
+package com.sh.visitor.member.model.visitor;
 
 
-import com.sh.member.model.vo.Gold;
-import com.sh.member.model.vo.Silver;
-import com.sh.member.model.vo.Vip;
+import com.sh.visitor.member.model.vo.Gold;
+import com.sh.visitor.member.model.vo.Silver;
+import com.sh.visitor.member.model.vo.Vip;
 
 public class EjaVisitor implements Visitor {
 	

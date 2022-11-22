@@ -1,9 +1,9 @@
-package com.sh.member.controller;
+package com.sh.visitor.member.controller;
 
 
-import com.sh.member.model.visitor.BuyVisitor;
-import com.sh.member.model.visitor.EjaVisitor;
-import com.sh.member.model.vo.Member;
+import com.sh.visitor.member.model.visitor.BuyVisitor;
+import com.sh.visitor.member.model.visitor.EjaVisitor;
+import com.sh.visitor.member.model.vo.Member;
 
 public class MemberManager {
 	public static final int MAX_MEMBER = 40;

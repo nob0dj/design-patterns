@@ -1,6 +1,6 @@
-package com.sh.member.model.vo;
+package com.sh.visitor.member.model.vo;
 
-import com.sh.member.model.visitor.Visitor;
+import com.sh.visitor.member.model.visitor.Visitor;
 public abstract class Member {
 	/*protected도 가능*/
 	private String name;
